@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import "./calculator.css";
 import * as math from 'mathjs';
@@ -81,13 +82,15 @@ export default function Calculator() {
         <button name="5" onClick={handleClick}>5</button>
         <button name="6" onClick={handleClick}>6</button>
         <button className="highlight" name="-" onClick={handleClick}>&ndash;</button>
-        <button name="1" onClick={handleClick}>1</button>
+        <button name="1" onClick={handleClick}>1</button> 
         <button name="2" onClick={handleClick}>2</button>
         <button name="3" onClick={handleClick}>3</button>
         <button className="highlight" name="+" onClick={handleClick}>+</button>
         <button name="0" onClick={handleClick}>0</button>
         <button className="highlight" name="." onClick={handleClick}>.</button>
+        <button className="highlight" name="^" onClick={handleClick}>^</button>
         <button className="highlight" name="=" onClick={calculate} id="result">=</button>
+       
       </div>
     </div>
   )
