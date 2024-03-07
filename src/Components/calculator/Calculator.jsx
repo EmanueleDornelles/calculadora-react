@@ -29,7 +29,7 @@ export default function Calculator() {
         if (result.slice(-1) === selectedOperator) {
           setResult(result.concat(buttonName));
         } else {
-          setResult(result + selectedOperator + buttonName);
+          setResult(result + buttonName);
         }
         setSelectedOperator('');
       } else {
@@ -86,9 +86,13 @@ export default function Calculator() {
         <button name="2" onClick={handleClick}>2</button>
         <button name="3" onClick={handleClick}>3</button>
         <button className="highlight" name="+" onClick={handleClick}>+</button>
-        <button name="0" onClick={handleClick}>0</button>
+
         <button className="highlight" name="." onClick={handleClick}>.</button>
+        <button name="0" onClick={handleClick}>0</button>
         <button className="highlight" name="^" onClick={handleClick}>^</button>
+        <button className="highlight" name="/100*" onClick={handleClick}>%</button>
+        <button className="highlight" name="*-1" onClick={handleClick}>±</button>
+        <button className="highlight" name="^-1" onClick={handleClick}>1/x</button>
         <button className="highlight" name="=" onClick={calculate} id="result">=</button>
        
       </div>
